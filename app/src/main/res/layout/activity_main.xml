@@ -4,14 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:gravity="center"
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Go to graph" />
+
+    <TextView
+        android:id="@+id/mValueView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Value of M: 0"/>
+
+    <SeekBar
+        android:id="@+id/seekbarM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="10"/>
+
+    <TextView
+        android:id="@+id/bValueView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Value of B: 0"/>
+
+    <SeekBar
+        android:id="@+id/seekbarB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="-50"
+        android:max="50"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/myRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal" />
+    
+
+
 </LinearLayout>
