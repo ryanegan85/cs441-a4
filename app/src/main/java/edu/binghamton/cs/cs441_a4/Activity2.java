@@ -1,7 +1,10 @@
 package edu.binghamton.cs.cs441_a4;
 
+import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
@@ -15,6 +18,8 @@ public class Activity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
+
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
 
         double x,y,m,b;
         x = 0;
@@ -33,4 +38,12 @@ public class Activity2 extends AppCompatActivity {
         graph.addSeries(series);
 
     }
+
+    /*
+    public boolean onOptionsItemSelected(MenuItem item){
+        Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivityForResult(myIntent, 0);
+        return true;
+    }
+    */
 }
