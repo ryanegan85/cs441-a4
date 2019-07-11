@@ -23,7 +23,19 @@ public class MainActivity extends AppCompatActivity {
         champs.add("Vayne");
         champs.add("Swain");
         champs.add("Leona");
-        champs.add("Lucian");
+        champs.add("Elise");
+        champs.add("Nidalee");
+        champs.add("Gnar");
+        champs.add("Sejuani");
+        champs.add("Volibear");
+        champs.add("Ashe");
+        champs.add("Kindred");
+        champs.add("Varus");
+        champs.add("Morgana");
+        champs.add("Ahri");
+        champs.add("Veigar");
+        champs.add("Aurelion Sol");
+        champs.add("Shyvana");
 
         recyclerView = (RecyclerView) findViewById(R.id.myRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

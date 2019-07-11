@@ -29,14 +29,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         this.mData = data;
     }
 
-    /*
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         TextView view = (TextView) mInflater.inflate(R.layout.recyclerview_row, parent, false);
         return new ViewHolder(view);
     }
-    */
 
+
+    /*
     @Override
     public MyAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
                                                      int viewType) {
@@ -47,10 +48,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         ViewHolder vh = new ViewHolder(v);
         return vh;
     }
+    */
 
     public void onBindViewHolder(ViewHolder holder, int position) {
-        String animal = mData.get(position);
-        holder.textView.setText(animal);
+        String champ = mData.get(position);
+        holder.textView.setText(champ);
     }
 
     @Override
